@@ -1,3 +1,5 @@
+<p align="center"><img src="logo.png" width="460" alt="Gaṇitha"></p>
+
 # Gaṇitha — welcome / landing page
 
 Public landing page for **Gaṇitha**, a private, invitation-only math &amp; reasoning practice app.
