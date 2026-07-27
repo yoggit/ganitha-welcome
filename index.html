@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gaṇitha — math &amp; reasoning practice for curious kids</title>
-<meta name="description" content="Gaṇitha is a private practice space for elementary math and reasoning — 8 skill areas, a timed Full Practice Test, and every answer explained. Sign in with Google to start.">
+<meta name="description" content="Gaṇitha is a practice space for elementary math and reasoning — three programs (Reasoning, Math Olympiad, Math Kangaroo) that scale by grade (3–7), a timed Full Practice Test, and every answer explained. Sign in with Google to start.">
 <meta name="theme-color" content="#0B0E2E" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#EDEFFA" media="(prefers-color-scheme: light)">
 <link rel="icon" type="image/png" href="icon.png">
@@ -102,6 +102,9 @@
 
   .areas{display:flex; flex-wrap:wrap; gap:9px; justify-content:center; margin-top:6px;}
   .area{background:var(--soft); border:1px solid var(--line); border-radius:999px; padding:8px 14px; font-size:13.5px; font-weight:600;}
+  .prog-label{font-family:'Baloo 2', sans-serif; font-weight:700; font-size:16px; text-align:center; margin:22px 0 10px; color:var(--ink);}
+  .prog-label:first-of-type{margin-top:6px;}
+  .prog-note{font-family:Inter, sans-serif; font-weight:500; font-size:13px; color:var(--muted);}
 
   /* Access callout */
   .access{background:linear-gradient(180deg, var(--soft), var(--soft2));
@@ -144,8 +147,8 @@
       <img class="hero-mark" src="icon.png" alt="" width="104" height="104">
       <h1 class="wordmark">Gaṇitha</h1>
       <p class="pron"><span class="pron-say">ga·ni·tha</span><button class="pron-btn" id="pronBtn" type="button" hidden aria-label="Hear how to say Gaṇitha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M17.5 8.5a5 5 0 0 1 0 7"/><path d="M20 6a9 9 0 0 1 0 12"/></svg></button></p>
-      <p class="lead">A friendly, focused practice space for elementary math and reasoning — building number sense, logic, and problem-solving for curious kids.</p>
-      <p class="sub">Eight skill areas, a timed Full Practice Test, and a short “Why” explaining every answer you miss.</p>
+      <p class="lead">A friendly, focused practice space for elementary math and reasoning — three programs that grow with your child, from everyday reasoning to Math Olympiad and Math Kangaroo.</p>
+      <p class="sub">Reasoning skill areas, contest-style Olympiad and Kangaroo tracks that scale by grade (3–7), a timed Full Practice Test, and a short “Why” explaining every answer you miss.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://ganitha.web.app">Enter Gaṇitha →</a>
         <a class="btn btn-ghost" href="#access">Getting started</a>
@@ -157,22 +160,28 @@
   <main class="wrap">
     <section>
       <h2>What's inside</h2>
-      <p class="section-sub">Practice across eight reasoning skill areas, plus a full timed mock test.</p>
+      <p class="section-sub">Three programs, a grade that grows with your child, and a full timed mock test.</p>
       <div class="grid">
-        <div class="feat"><span class="i">🧠</span><h3>8 skill areas</h3><p>Logical, critical, verbal, numerical, abstract reasoning and more — grouped by skill.</p></div>
+        <div class="feat"><span class="i">🧭</span><h3>Three programs</h3><p>Reasoning skill areas, a contest-style <b>Math Olympiad</b> track, and a playful <b>Math Kangaroo</b> track — pick the one that fits today.</p></div>
+        <div class="feat"><span class="i">📈</span><h3>Grows by grade</h3><p>Choose a grade from 3 to 7; the Olympiad and Kangaroo tracks scale up with it, mixing in review from earlier grades so nothing is forgotten.</p></div>
+        <div class="feat"><span class="i">🏆</span><h3>Math Olympiad</h3><p>Algebra, number theory, fractions, negatives, counting, logic and geometry — with real diagrams for shapes, angles and solids.</p></div>
+        <div class="feat"><span class="i">🦘</span><h3>Math Kangaroo</h3><p>Non-routine “aha” puzzles in three point-tiers — a gentle Warm-up, a two-step Challenge, and a multi-step Brain-buster.</p></div>
         <div class="feat"><span class="i">🎯</span><h3>Full Practice Test</h3><p>A timed mock test in six short parts with a break in the middle, drawn fresh from a large question bank.</p></div>
         <div class="feat"><span class="i">💡</span><h3>Every answer explained</h3><p>Miss one and a short “Why” shows the reasoning or the working — a wrong answer becomes a chance to learn.</p></div>
         <div class="feat"><span class="i">🎮</span><h3>Three ways to practice</h3><p>Untimed Practice with instant feedback, a gentle Timed mode, or the full timed test.</p></div>
         <div class="feat"><span class="i">🌿</span><h3>Calm by design</h3><p>No red flashes, no countdown panic. Practice has no clock at all. Timed gives about 40 seconds a question and checks in every five — look at what you missed, then keep going or stop. And a hard question can be set aside; it slides back in later, so being stuck never means being stuck.</p></div>
         <div class="feat"><span class="i">🔖</span><h3>Never lose your place</h3><p>Close the tab mid-round and come back — the round is still there, at the question you left. The Full Practice Test picks up too. Practice mode has no clock, so a break costs nothing.</p></div>
         <div class="feat"><span class="i">🎲</span><h3>Fresh every time</h3><p>Questions and answer choices are shuffled each run, so kids solve rather than memorize.</p></div>
-        <div class="feat"><span class="i">🖨️</span><h3>Printable workbook</h3><p>The whole question set as a PDF with a full answer key and a worked explanation for every question. It's for grown-ups — because it holds every answer, it stays behind your PIN and out of child mode.</p></div>
+        <div class="feat"><span class="i">🖨️</span><h3>Printable workbook</h3><p>Download the whole set as a PDF — or just one section, or a single grade of it — each with a full answer key and a worked explanation for every question. It's for grown-ups, so it stays behind your PIN and out of child mode.</p></div>
         <div class="feat"><span class="i">🏡</span><h3>Screen time, your call</h3><p>Optional parent controls: a profile for each child, a daily limit from 15 minutes to 2 hours behind a PIN only you know, and a plain list of recent rounds so you can see what they actually practised.</p></div>
       </div>
     </section>
 
     <section>
-      <h2>Skill areas</h2>
+      <h2>Programs &amp; topics</h2>
+      <p class="section-sub">Three programs to move between — reasoning skills, and two contest-style tracks that scale by grade.</p>
+
+      <p class="prog-label">🧠 Reasoning <span class="prog-note">· skill areas + Full Practice Test</span></p>
       <div class="areas">
         <span class="area">🧠 Logical Thinking</span>
         <span class="area">🔍 Critical Thinking</span>
@@ -182,6 +191,24 @@
         <span class="area">🧮 Numerical Reasoning</span>
         <span class="area">📖 Verbal Reasoning</span>
         <span class="area">🔷 Abstract Reasoning</span>
+      </div>
+
+      <p class="prog-label">🏆 Math Olympiad <span class="prog-note">· Grades 3–7</span></p>
+      <div class="areas">
+        <span class="area">🔢 Algebra</span>
+        <span class="area">🔟 Number Theory</span>
+        <span class="area">➖ Negative Numbers</span>
+        <span class="area">🍕 Fractions</span>
+        <span class="area">🎲 Counting</span>
+        <span class="area">🧩 Logic</span>
+        <span class="area">📐 Geometry</span>
+      </div>
+
+      <p class="prog-label">🦘 Math Kangaroo <span class="prog-note">· Grades 3–7</span></p>
+      <div class="areas">
+        <span class="area">⭐ Warm-up (3-point)</span>
+        <span class="area">⭐⭐ Challenge (4-point)</span>
+        <span class="area">⭐⭐⭐ Brain-buster (5-point)</span>
       </div>
     </section>
 
